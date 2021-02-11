@@ -8,7 +8,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@vue/compiler-sfc": "^3.0.5",
     "rollup": "^2.38.4",
