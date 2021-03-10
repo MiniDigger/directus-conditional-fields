@@ -22,8 +22,12 @@ export default {
           con.conditions.forEach(c => {
             if (c.value === newVal[con.toggle]) {
               this.log("found case!");
-              c.show.forEach(el => this.show(el));
-              c.hide.forEach(el => this.hide(el));
+              if (Array.isArray(c.show)) {
+                c.show.forEach(el => this.show(el));
+              }
+              if (Array.isArray(c.hide)) {
+                c.hide.forEach(el => this.hide(el));
+              }
             } else {
               this.log(c.value + " !== " + newVal[con.toggle]);
             }
