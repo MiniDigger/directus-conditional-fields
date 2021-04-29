@@ -35,11 +35,11 @@ export default {
   methods: {
     hide(el) {
       this.log("hide " + el);
-      document.querySelector("[field=" + el + "]").parentElement.parentElement.style.display = "none";
+      document.querySelector(`[field="${el}" ], [fields="${el}"]`).parentElement.parentElement.style.display = "none";
     },
     show(el) {
       this.log("show " + el);
-      document.querySelector("[field=" + el + "]").parentElement.parentElement.style.display = "block";
+      document.querySelector(`[field="${el}" ], [fields="${el}"]`).parentElement.parentElement.style.display = "block";
     },
     log(log) {
       if(this.debug) {
