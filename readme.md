@@ -2,6 +2,8 @@
 
 Simple Directus Extension that allows conditionally showing or hiding fields.
 
+> Status: This project is archived. You shouldn't need this anymore, as directus v9 now includes this feature!
+
 ## Example
 
 ![example.gif](example.gif)
